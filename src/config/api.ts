@@ -4,7 +4,7 @@ export const API_ENDPOINTS = {
   checkout: `${API_BASE_URL}/api/checkout`,
   webhookPaddle: `${API_BASE_URL}/webhook/paddle`,
   ocr: `${API_BASE_URL}/api/ocr`,
-  billingCheckAccess: (userId: string) => `${API_BASE_URL}/api/billing/check-access/${userId}`,
+  billingCheckAccess: (userId: string) => `${API_BASE_URL}/api/billing/check-access?user_id=${userId}`,
   billingCheckoutCreate: `${API_BASE_URL}/api/billing/checkout/create`,
   billingOrders: (userId: string) => `${API_BASE_URL}/api/billing/orders/${userId}`,
   billingTransaction: (transactionId: string) => `${API_BASE_URL}/api/billing/transaction/${transactionId}`,
